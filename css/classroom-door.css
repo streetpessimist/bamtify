@@ -87,11 +87,12 @@ body {
   height: 100vh;
 }
 
+/* 강의실 문 이미지 비율: 1080 × 711 */
 .corridor-scene {
   position: relative;
-  width: calc(100vh * 3094 / 1117);
+  width: calc(100vh * 1080 / 711);
   height: 100vh;
-  min-width: 2400px;
+  min-width: 800px;
   overflow: hidden;
 }
 
@@ -118,39 +119,20 @@ body {
   pointer-events: none;
 }
 
-.hotspot-guide-left {
-  left: 1.325%;
-  top: 4.476%;
-  width: 17.324%;
-  height: 88.272%;
+/* 노란 문 */
+.hotspot-door {
+  left: 31.2%;
+  top: 13.1%;
+  width: 42.7%;
+  height: 86.8%;
 }
 
-.hotspot-logo {
-  left: 16.936%;
-  top: 6.267%;
-  width: 19.489%;
-  height: 52.014%;
-}
-
-.hotspot-trashcan {
-  left: 34%;
-  top: 62%;
-  width: 20%;
-  height: 30%;
-}
-
-.hotspot-floor {
-  left: 70.103%;
-  top: 17.189%;
-  width: 9.179%;
-  height: 56.401%;
-}
-
-.hotspot-guide-right {
-  left: 79.929%;
-  top: 4.476%;
-  width: 18.455%;
-  height: 65.712%;
+/* 시간표 카드 */
+.hotspot-schedule {
+  left: 12.7%;
+  top: 55.3%;
+  width: 15.8%;
+  height: 33.8%;
 }
 
 .bamtify-piece {
@@ -168,34 +150,16 @@ body {
   animation: weird-pop 0.65s steps(4, end) both;
 }
 
-.piece-guide-left {
-  left: 1.325%;
-  top: 4.476%;
-  width: 17.324%;
+.piece-door {
+  left: 31.2%;
+  top: 13.1%;
+  width: 42.7%;
 }
 
-.piece-logo {
-  left: 16.936%;
-  top: 6.267%;
-  width: 19.489%;
-}
-
-.piece-trashcan {
-  left: 35.7%;
-  top: 66.5%;
-  width: 19.5%;
-}
-
-.piece-floor {
-  left: 70.103%;
-  top: 17.189%;
-  width: 9.179%;
-}
-
-.piece-guide-right {
-  left: 79.929%;
-  top: 4.476%;
-  width: 18.455%;
+.piece-schedule {
+  left: 12.7%;
+  top: 55.3%;
+  width: 15.8%;
 }
 
 .weird-flash {

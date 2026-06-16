@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강의실 문 Bamtify</title>
+    <link href="./css/classroom-door.css" rel="stylesheet" />
+    <script src="./js/corridor.js" defer></script>
+  </head>
+  <body>
+    <nav class="page-nav" aria-label="페이지 이동">
+      <a class="page-nav-link page-nav-left" href="./corridor.html">복도</a>
+      <a class="page-nav-link page-nav-right" href="./classroom.html">강의실</a>
+    </nav>
+    <div class="click-guide">"Click to Bamtify"</div>
+    <main class="corridor-strip" aria-label="강의실 문 밤티파이">
+      <section class="corridor-scene">
+        <img
+          class="corridor-base"
+          src="./images/강의실 문.png"
+          alt="강의실 문 원본"
+        />
+
+        <button
+          class="hotspot hotspot-door"
+          type="button"
+          data-target="door"
+          aria-label="강의실 문 밤티파이"
+        ></button>
+        <button
+          class="hotspot hotspot-schedule"
+          type="button"
+          data-target="schedule"
+          aria-label="시간표 밤티파이"
+        ></button>
+
+        <img
+          class="bamtify-piece piece-door"
+          src="./images/강의실문_밤티.png"
+          alt=""
+          aria-hidden="true"
+          data-piece="door"
+        />
+        <img
+          class="bamtify-piece piece-schedule"
+          src="./images/시간표_밤티.png"
+          alt=""
+          aria-hidden="true"
+          data-piece="schedule"
+        />
+
+        <div class="weird-flash" aria-hidden="true"></div>
+      </section>
+    </main>
+  </body>
+</html>

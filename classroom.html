@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강의실 Bamtify</title>
+    <link href="./css/classroom.css" rel="stylesheet" />
+    <script src="./js/corridor.js" defer></script>
+  </head>
+  <body>
+    <nav class="page-nav" aria-label="페이지 이동">
+      <a class="page-nav-link page-nav-left" href="./classroom-door.html"
+        >강의실 문앞</a
+      >
+      <a class="page-nav-link page-nav-right" href="./index.html">home</a>
+    </nav>
+    <div class="click-guide">"Click to Bamtify"</div>
+    <main class="corridor-strip" aria-label="강의실 밤티파이">
+      <section class="corridor-scene">
+        <img
+          class="corridor-base"
+          src="./images/강의실.png"
+          alt="강의실 원본"
+        />
+
+        <button
+          class="hotspot hotspot-screen"
+          type="button"
+          data-target="screen"
+          aria-label="TV 화면 밤티파이"
+        ></button>
+
+        <img
+          class="bamtify-piece piece-screen"
+          src="./images/피피티_밤티.png"
+          alt=""
+          aria-hidden="true"
+          data-piece="screen"
+        />
+        <div class="weird-flash" aria-hidden="true"></div>
+      </section>
+    </main>
+  </body>
+</html>

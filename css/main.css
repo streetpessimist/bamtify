@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100%;
+}
+
+body {
+  background: #eeeeee;
+  color: #000;
+  font-family: Pretendard, Arial, sans-serif;
+}
+
+.poster-page {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 44% 56%;
+  align-items: center;
+  min-height: 20vw;
+  max-height: 300px;
+  background: #30d800;
+  overflow: hidden;
+}
+
+.hero-title {
+  margin: 0 0 0 10vw;
+  color: #30ff00;
+  font-family: Papyrus, Jibaek, fantasy;
+  font-size: clamp(64px, 11vw, 180px);
+  font-weight: 400;
+  line-height: 0.82;
+  text-shadow: 8px 8px 0 #003dff, 0 0 18px #003dff;
+}
+
+.hero-copy-image {
+  display: block;
+  width: 92%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 3.6vw;
+  mix-blend-mode: screen;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  background: #fff;
+}
+
+.intro-image {
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+@keyframes bamti-flicker {
+  0%,
+  42% {
+    filter: brightness(1) saturate(1);
+    opacity: 1;
+  }
+
+  48% {
+    filter: brightness(1.45) saturate(1.8) contrast(1.18);
+    opacity: 0.82;
+  }
+
+  54% {
+    filter: brightness(0.72) saturate(0.75) contrast(1.3);
+    opacity: 0.96;
+  }
+
+  62%,
+  100% {
+    filter: brightness(1.14) saturate(1.35);
+    opacity: 1;
+  }
+}
+
+.intro-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(24px, 3.4vw, 64px);
+  background: #fff;
+  color: #000;
+  font-size: 18pt;
+  font-weight: 900;
+  line-height: 1.58;
+}
+
+.intro-copy p {
+  margin: 0 0 1.4em;
+}
+
+.intro-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.question-banner {
+  width: 100%;
+  height: 72px;
+  overflow: hidden;
+  background: #ff1300;
+}
+
+.question-banner-text {
+  width: max-content;
+  margin: 0;
+  color: #fff600;
+  font-family: Jibaek, Pretendard, sans-serif;
+  font-size: clamp(18px, 3vw, 44px);
+  font-weight: 900;
+  line-height: 72px;
+  white-space: nowrap;
+  animation: question-marquee 14s linear infinite;
+}
+
+@keyframes question-marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.collection-section,
+.extraction-section {
+  position: relative;
+  background: #ffffa8;
+}
+
+.body-text-box {
+  width: 100%;
+  padding: clamp(24px, 3vw, 52px);
+  background: #000;
+  color: #fff;
+  font-family: Pretendard, Arial, sans-serif;
+  font-size: 18pt;
+  font-weight: 900;
+  line-height: 1.62;
+  word-break: keep-all;
+}
+
+.body-text-highlight {
+  display: block;
+  margin: 0;
+  padding: 10px 16px;
+  background: #f5ff00;
+  color: #000;
+  font-weight: 900;
+}
+
+.collection-image,
+.extraction-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stamp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 8px;
+  overflow: hidden;
+}
+
+.stamp-row img {
+  display: block;
+  width: 22%;
+  min-width: 120px;
+  height: auto;
+}
+
+.extract-stamps img {
+  width: 18%;
+  min-width: 96px;
+}
+
+.bamtify-section {
+  position: relative;
+  min-height: 220px;
+  padding: 34px 36px 58px;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 0, 0.35),
+      transparent 18%
+    ),
+    radial-gradient(circle at 80% 40%, rgba(0, 255, 255, 0.22), transparent 20%),
+    #000;
+  color: #f5ff00;
+}
+
+.bamtify-section p {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 36px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.bamtify-arrow {
+  position: absolute;
+  right: 7vw;
+  top: 34px;
+  z-index: 3;
+  width: clamp(110px, 13vw, 220px);
+  height: auto;
+  transform: rotate(118deg);
+  filter: drop-shadow(8px 8px 0 #001eff) drop-shadow(0 0 10px #f5ff00);
+  pointer-events: none;
+}
+
+.bamtify-section h2,
+.bamtify-button {
+  position: relative;
+  z-index: 4;
+  display: block;
+  width: min(86vw, 980px);
+  margin: 0 auto;
+  padding: clamp(22px, 3vw, 42px) clamp(24px, 5vw, 80px);
+  color: #faff00;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.25) 12%,
+      transparent 34%
+    ),
+    radial-gradient(
+      ellipse at 28% 20%,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.24) 18%,
+      transparent 32%
+    ),
+    linear-gradient(180deg, #73ff00 0%, #12d300 42%, #007c00 54%, #00e900 100%);
+  border: 7px solid #062800;
+  border-radius: 999px;
+  box-shadow: inset 0 14px 18px rgba(255, 255, 255, 0.72),
+    inset 0 -18px 22px rgba(0, 0, 0, 0.45), 0 0 0 6px #d5ff00,
+    0 0 0 12px #001eff, 0 18px 0 #003700, 0 28px 34px rgba(0, 0, 0, 0.8);
+  font-family: Jibaek, Pretendard, sans-serif;
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 900;
+  text-decoration: none;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: clamp(4px, 1vw, 12px);
+  text-shadow: 3px 3px 0 #001eff, -2px -2px 0 #ff00c8, 0 5px 0 #000;
+}
+
+.bamtify-section h2::before,
+.bamtify-button::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: 26%;
+  height: 34%;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+.bamtify-section h2::after,
+.bamtify-button::after {
+  content: "";
+  position: absolute;
+  right: 7%;
+  bottom: 14%;
+  width: 18%;
+  height: 18%;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.15) 45%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .poster-page {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 0;
+    max-height: none;
+  }
+
+  .hero-copy-image {
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  .intro-section {
+    grid-template-columns: 1fr;
+  }
+
+  .bamtify-section h2,
+  .bamtify-button {
+    width: 100%;
+    border-width: 5px;
+  }
+}

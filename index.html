@@ -2,159 +2,152 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>Sunset Collage</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        overflow-x: hidden;
-        background: #111;
-        font-family: Georgia, "Times New Roman", serif;
-      }
-
-      .canvas {
-        position: relative;
-        width: 1400px;
-        height: 1000px;
-        background: #222;
-      }
-
-      .nav {
-        position: absolute;
-        top: 8px;
-        left: 12px;
-        z-index: 20;
-        font-size: 14px;
-      }
-
-      .nav a {
-        color: black;
-        margin-right: 18px;
-        text-decoration: underline;
-        background: rgba(255, 255, 255, 0.35);
-      }
-
-      .title {
-        position: absolute;
-        top: 30px;
-        left: 50px;
-        z-index: 10;
-        color: #fff55a;
-        font-size: 130px;
-        line-height: 0.8;
-        font-style: italic;
-        font-weight: bold;
-      }
-
-      .info {
-        position: absolute;
-        top: 185px;
-        left: 55px;
-        z-index: 10;
-        color: #fff55a;
-        font-size: 76px;
-        font-style: italic;
-        font-weight: bold;
-      }
-
-      .text-box {
-        position: absolute;
-        top: 285px;
-        left: 135px;
-        width: 500px;
-        z-index: 12;
-        background: black;
-        color: #ff4cff;
-        padding: 4px;
-        font-size: 31px;
-        line-height: 0.96;
-        font-style: italic;
-        font-weight: bold;
-      }
-
-      .photo {
-        position: absolute;
-        object-fit: cover;
-      }
-
-      .p1 {
-        top: 0;
-        left: 0;
-        width: 210px;
-        height: 200px;
-      }
-      .p2 {
-        top: 0;
-        left: 200px;
-        width: 205px;
-        height: 200px;
-      }
-      .p3 {
-        top: 0;
-        left: 400px;
-        width: 210px;
-        height: 200px;
-      }
-      .p4 {
-        top: 0;
-        left: 600px;
-        width: 210px;
-        height: 200px;
-      }
-      .p5 {
-        top: 210px;
-        left: 665px;
-        width: 590px;
-        height: 150px;
-        border: 3px solid black;
-      }
-      .p6 {
-        top: 390px;
-        left: 795px;
-        width: 480px;
-        height: 280px;
-      }
-      .p7 {
-        top: 270px;
-        left: 0;
-        width: 120px;
-        height: 165px;
-      }
-      .p8 {
-        top: 390px;
-        left: 655px;
-        width: 135px;
-        height: 310px;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bamtify Everything</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Papyrus&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pretendard&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jibaek&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <main class="canvas">
-      <nav class="nav">
-        <a href="#">Info</a>
-        <a href="#">Field Notes</a>
-        <a href="#">Film</a>
-        <a href="#">Publication</a>
-        <a href="#">Archive</a>
-      </nav>
+    <img src="./images/collect.png" alt="" position:/>
+    <main class="poster-page">
+      <section class="hero-section" aria-label="프로젝트 소개">
+        <h1 class="hero-title">Bamtify<br />Everything..</h1>
+        <img
+          class="hero-copy-image"
+          src="./images/길거리를.png"
+          alt="길거리를, 강의실을, 책상을, Bamtify하다"
+        />
+      </section>
 
-      <img class="photo p1" src="sunset1.jpg" />
-      <img class="photo p2" src="sunset2.jpg" />
-      <img class="photo p3" src="sunset3.jpg" />
-      <img class="photo p4" src="sunset4.jpg" />
-      <img class="photo p5" src="sunset5.jpg" />
-      <img class="photo p6" src="sunset6.jpg" />
-      <img class="photo p7" src="sunset7.jpg" />
-      <img class="photo p8" src="sunset8.jpg" />
+      <section class="intro-section" aria-label="밤티 질문">
+        <img
+          class="intro-image"
+          src="./images/bamti.png"
+          alt="요 아이가 바로 밤티라는 친구예요"
+        />
+        <div class="intro-copy">
+          <p>
+            ‘밤티’ : 최근 Z세대 사이에서 SNS를 중심으로 유행하는 신조어로, 주로
+            ‘못생겼다’, ‘촌스럽다’, ‘어색하다’는 의미를 담아 상대를 장난스럽게
+            비하할 때 쓰는 표현이다.
+          </p>
+          <p>
+            디자인과에 몸담은 4년 동안 나의 시선은 늘 '무엇이 좋은 디자인인가'를
+            판단하는 데 머물러 있었다. 그러다 눈에 들어온 것이 바로 ‘밤티’
+            디자인이다. Z세대 사이에서 ‘촌스럽고 어색하다’는 의미로 쓰이는 이
+            신조어는, 역설적이게도 나에게 새로운 시각적 자극을 주었다.
+          </p>
+          <p>
+            프로젝트 &lt;전부 밤티로 만들기&gt;는 주변에서 발견한 아마추어적이고
+            어딘가 어긋난 디자인 이미지를 수집하고, 그 조형적 특징을 추출하여
+            정제된 하이엔드 디자인에 역으로 적용하는 리디자인 프로젝트다.
+          </p>
+        </div>
+      </section>
+      <div class="question-banner">
+        <h2 class="question-banner-text">
+          우리는 어떤 이미지들을 보고 "밤티같다"고 생각하게 될까?
+        </h2>
+      </div>
+      <div class="body-text-box">
+        우리는 어떤 시각 이미지를 보고 ‘밤티 같다’, ‘못생겼다’, ‘구리다’고
+        느낄까? 어떤 서체와 색상 선택이 그런 인상을 만드는 것일까? 세련됨의 규범
+        바깥에 존재하는 이른바 ‘밤티 디자인’들은 저마다 그렇게 될 수밖에 없었던
+        나름의 이유를 품고 있다. 경쟁 업체 사이에서 눈에 띄기 위해, 클라이언트의
+        요구에 의해, 혹은 전문적인 디자인 교육을 받지 못해서 등등.
+      </div>
+      <div class="body-text-box">
+        줄곧 정제된 법칙만을 학습해 온 나에게 밤티 디자인의 무질서는 기분 좋은
+        충격이자 해방이었다. 무분별한 가운데 정렬, 지나치게 많은 서체와 색상,
+        맥락 없는 효과들. 규칙을 깨부수는 데서 오는 이 해방감을 바탕으로,
+        '정형화된 아름다움'의 경계를 다시 질문하고자 한다.
+      </div>
 
-      <div class="title">Sunset Garden</div>
-      <div class="info">Info</div>
+      <div class="question-banner">
+        <h2 class="question-banner-text">
+          이를 위해 본 프로젝트는 세 가지 단계의 시각적 실험을 거친다.
+        </h2>
+      </div>
 
-      <section class="text-box">
-        Sunset Garden is a temporary congregation of friends and strangers over
-        a reclaimed land that aims to reevaluate what it means to own one's
-        body, to confront shame, to desire, to trust, to forgive, to hope, to
-        love, to transfigure while watching the sunset.
+      <section class="collection-section" aria-label="수집 이미지">
+        <div class="stamp-row collect-stamps" aria-hidden="true">
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+          <img src="./images/collect.png" alt="" />
+        </div>
+        <div class="body-text-box">
+          첫 번째는 기록과 수집이다. 일상적 공간을 거닐며 ‘못생겼다’, ‘구리다’,
+          혹은 ‘밤티스럽다’고 느껴지는 시각 이미지들을 포착해 나갔다. 이때 한
+          가지 명확한 기준이 있다면, 불쾌감보다는 실소나 흥미를 자아내는 '해학적
+          유희'가 담긴 이미지들을 우선적으로 아카이빙했다는 점이다.
+        </div>
+        <img
+          class="collection-image"
+          src="./images/collection.png"
+          alt="수집된 밤티 이미지 콜라주"
+        />
+      </section>
+
+      <section class="extraction-section" aria-label="조형 추출 이미지">
+        <div class="stamp-row extract-stamps" aria-hidden="true">
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+          <img src="./images/extract.png" alt="" />
+        </div>
+        <div class="body-text-box">
+          두 번째는 조형적 추출이다. 수집된 이미지들 속에서 밤티 특유의 어색함과
+          투박함을 만들어내는 핵심 시각 요소(서체, 색상 조합, 레이아웃, 과도한
+          효과 등)를 정밀하게 분리해 냈다.
+        </div>
+        <img
+          class="extraction-image"
+          src="./images/extraction.png"
+          alt="밤티 이미지에서 추출한 조형 요소 콜라주"
+        />
+      </section>
+
+      <section class="bamtify-section" aria-label="밤티파이 단계">
+        <p>마지막 단계는 '밤티파이(Bamtify)'다.</p>
+        <p>
+          이렇게 추출한 조형적 특징들을 언어를 역설적으로 가장 정제되고 정형화된
+          하이엔드 디자인의 프레임워크 속에 정교하게 이식(적용)하는 리디자인
+          과정을 거친다. 이번 단계에서는 홍익대학교 시각디자인과가 있는 7층을
+          밤티파이해보았다.
+        </p>
+        <img
+          class="bamtify-arrow"
+          src="./images/v8_1587.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <a class="bamtify-button" href="./corridor.html">전부 밤티로 만들기..</a>
       </section>
     </main>
   </body>

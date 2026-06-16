@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: #fff;
+}
+
+.corridor-strip {
+  width: max-content;
+  height: 100vh;
+}
+
+.corridor-scene {
+  position: relative;
+  width: calc(100vh * 3094 / 1117);
+  height: 100vh;
+  min-width: 2400px;
+  overflow: hidden;
+}
+
+.corridor-base {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 40;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hotspot:hover {
+  outline: 4px solid #ff0000;
+  outline-offset: -4px;
+  background: rgba(255, 255, 0, 0.16);
+}
+
+.hotspot.is-done {
+  pointer-events: none;
+}
+
+.hotspot-guide-left {
+  left: 1.325%;
+  top: 4.476%;
+  width: 17.324%;
+  height: 88.272%;
+}
+
+.hotspot-logo {
+  left: 16.936%;
+  top: 6.267%;
+  width: 19.489%;
+  height: 52.014%;
+}
+
+.hotspot-trashcan {
+  left: 34%;
+  top: 62%;
+  width: 20%;
+  height: 30%;
+}
+
+.hotspot-floor {
+  left: 70.103%;
+  top: 17.189%;
+  width: 9.179%;
+  height: 56.401%;
+}
+
+.hotspot-guide-right {
+  left: 79.929%;
+  top: 4.476%;
+  width: 18.455%;
+  height: 65.712%;
+}
+
+.bamtify-piece {
+  position: absolute;
+  z-index: 20;
+  display: block;
+  height: auto;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.15) rotate(-18deg);
+}
+
+.bamtify-piece.is-visible {
+  opacity: 1;
+  animation: weird-pop 0.65s steps(4, end) both;
+}
+
+.piece-guide-left {
+  left: 1.325%;
+  top: 4.476%;
+  width: 17.324%;
+}
+
+.piece-logo {
+  left: 16.936%;
+  top: 6.267%;
+  width: 19.489%;
+}
+
+.piece-trashcan {
+  left: 35.7%;
+  top: 66.5%;
+  width: 19.5%;
+}
+
+.piece-floor {
+  left: 70.103%;
+  top: 17.189%;
+  width: 9.179%;
+}
+
+.piece-guide-right {
+  left: 79.929%;
+  top: 4.476%;
+  width: 18.455%;
+}
+
+.weird-flash {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 0, 255, 0.4) 0 12px, rgba(0, 255, 255, 0.35) 12px 24px),
+    radial-gradient(circle, rgba(255, 255, 0, 0.75), transparent 40%);
+  mix-blend-mode: multiply;
+}
+
+.corridor-scene.is-flashing .weird-flash {
+  animation: screen-flash 0.32s steps(3, end);
+}
+
+@keyframes weird-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.05) rotate(-28deg);
+    filter: hue-rotate(0deg) saturate(1);
+  }
+
+  35% {
+    opacity: 1;
+    transform: scale(1.25) rotate(11deg);
+    filter: hue-rotate(180deg) saturate(2.4) contrast(1.4);
+  }
+
+  65% {
+    transform: scale(0.92) rotate(-7deg);
+    filter: hue-rotate(300deg) saturate(1.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: hue-rotate(0deg) saturate(1);
+  }
+}
+
+@keyframes screen-flash {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0.85;
+  }
+
+  70% {
+    opacity: 0.25;
+  }
+}

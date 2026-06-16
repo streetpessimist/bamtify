@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sunset Collage</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        overflow-x: hidden;
+        background: #111;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      .canvas {
+        position: relative;
+        width: 1400px;
+        height: 1000px;
+        background: #222;
+      }
+
+      .nav {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        z-index: 20;
+        font-size: 14px;
+      }
+
+      .nav a {
+        color: black;
+        margin-right: 18px;
+        text-decoration: underline;
+        background: rgba(255, 255, 255, 0.35);
+      }
+
+      .title {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        z-index: 10;
+        color: #fff55a;
+        font-size: 130px;
+        line-height: 0.8;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .info {
+        position: absolute;
+        top: 185px;
+        left: 55px;
+        z-index: 10;
+        color: #fff55a;
+        font-size: 76px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .text-box {
+        position: absolute;
+        top: 285px;
+        left: 135px;
+        width: 500px;
+        z-index: 12;
+        background: black;
+        color: #ff4cff;
+        padding: 4px;
+        font-size: 31px;
+        line-height: 0.96;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .photo {
+        position: absolute;
+        object-fit: cover;
+      }
+
+      .p1 {
+        top: 0;
+        left: 0;
+        width: 210px;
+        height: 200px;
+      }
+      .p2 {
+        top: 0;
+        left: 200px;
+        width: 205px;
+        height: 200px;
+      }
+      .p3 {
+        top: 0;
+        left: 400px;
+        width: 210px;
+        height: 200px;
+      }
+      .p4 {
+        top: 0;
+        left: 600px;
+        width: 210px;
+        height: 200px;
+      }
+      .p5 {
+        top: 210px;
+        left: 665px;
+        width: 590px;
+        height: 150px;
+        border: 3px solid black;
+      }
+      .p6 {
+        top: 390px;
+        left: 795px;
+        width: 480px;
+        height: 280px;
+      }
+      .p7 {
+        top: 270px;
+        left: 0;
+        width: 120px;
+        height: 165px;
+      }
+      .p8 {
+        top: 390px;
+        left: 655px;
+        width: 135px;
+        height: 310px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="canvas">
+      <nav class="nav">
+        <a href="#">Info</a>
+        <a href="#">Field Notes</a>
+        <a href="#">Film</a>
+        <a href="#">Publication</a>
+        <a href="#">Archive</a>
+      </nav>
+
+      <img class="photo p1" src="sunset1.jpg" />
+      <img class="photo p2" src="sunset2.jpg" />
+      <img class="photo p3" src="sunset3.jpg" />
+      <img class="photo p4" src="sunset4.jpg" />
+      <img class="photo p5" src="sunset5.jpg" />
+      <img class="photo p6" src="sunset6.jpg" />
+      <img class="photo p7" src="sunset7.jpg" />
+      <img class="photo p8" src="sunset8.jpg" />
+
+      <div class="title">Sunset Garden</div>
+      <div class="info">Info</div>
+
+      <section class="text-box">
+        Sunset Garden is a temporary congregation of friends and strangers over
+        a reclaimed land that aims to reevaluate what it means to own one's
+        body, to confront shame, to desire, to trust, to forgive, to hope, to
+        love, to transfigure while watching the sunset.
+      </section>
+    </main>
+  </body>
+</html>

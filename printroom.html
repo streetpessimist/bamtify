@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프린트실 Bamtify</title>
+    <link href="./css/printroom.css" rel="stylesheet" />
+    <script src="./js/corridor.js" defer></script>
+  </head>
+  <body>
+    <nav class="page-nav" aria-label="페이지 이동">
+      <a class="page-nav-link page-nav-left" href="./classroom.html">R726</a>
+      <a class="page-nav-link page-nav-right" href="./index.html">Home</a>
+    </nav>
+    <div class="click-guide">"Click to Bamtify"</div>
+    <main class="corridor-strip" aria-label="프린트실">
+      <section class="corridor-scene">
+        <img
+          class="corridor-base"
+          src="./images/printroom.png"
+          alt="프린트실 원본"
+        />
+
+        <button
+          class="hotspot hotspot-cutting-mat"
+          type="button"
+          data-target="cutting-mat"
+          aria-label="커팅 매트 밤티파이"
+        ></button>
+
+        <img
+          class="bamtify-piece piece-cutting-mat"
+          src="./images/cutting mat.png"
+          alt=""
+          aria-hidden="true"
+          data-piece="cutting-mat"
+        />
+
+        <div class="weird-flash" aria-hidden="true"></div>
+      </section>
+    </main>
+  </body>
+</html>

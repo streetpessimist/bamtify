@@ -10,9 +10,11 @@
   <body>
     <nav class="page-nav" aria-label="페이지 이동">
       <a class="page-nav-link page-nav-left" href="./classroom-door.html"
-        >강의실 문앞</a
+        >강의실 복도</a
       >
-      <a class="page-nav-link page-nav-right" href="./index.html">home</a>
+      <a class="page-nav-link page-nav-right" href="./printroom.html"
+        >프린트실</a
+      >
     </nav>
     <div class="click-guide">"Click to Bamtify"</div>
     <main class="corridor-strip" aria-label="강의실 밤티파이">
@@ -29,6 +31,12 @@
           data-target="screen"
           aria-label="TV 화면 밤티파이"
         ></button>
+        <button
+          class="hotspot hotspot-professor"
+          type="button"
+          data-target="professor"
+          aria-label="교수님 밤티파이"
+        ></button>
 
         <img
           class="bamtify-piece piece-screen"
@@ -36,6 +44,13 @@
           alt=""
           aria-hidden="true"
           data-piece="screen"
+        />
+        <img
+          class="bamtify-piece piece-professor"
+          src="./images/professor_bamti.png"
+          alt=""
+          aria-hidden="true"
+          data-piece="professor"
         />
         <div class="weird-flash" aria-hidden="true"></div>
       </section>

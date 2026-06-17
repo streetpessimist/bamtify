@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --magic-wand-cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath d='M7 29L24 12' stroke='%230014ad' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M9 31L26 14' stroke='%23fff600' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M25 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z' fill='%23ff00c8' stroke='%230014ad' stroke-width='1.5'/%3E%3Ccircle cx='8' cy='8' r='2' fill='%23fff600'/%3E%3Ccircle cx='31' cy='23' r='1.7' fill='%2300ffff'/%3E%3C/svg%3E")
+      7 29,
+    pointer;
+}
+
 html,
 body {
   margin: 0;
@@ -15,6 +21,11 @@ body {
   background: #fff;
 }
 
+a:hover,
+button:hover {
+  cursor: var(--magic-wand-cursor);
+}
+
 .page-nav {
   position: fixed;
   inset: 18px 22px auto;
@@ -25,25 +36,25 @@ body {
 .page-nav-link {
   position: absolute;
   pointer-events: auto;
-  min-width: 150px;
-  padding: 12px 26px 13px;
-  border: 4px solid #fff;
+  min-width: 126px;
+  padding: 10px 22px 11px;
+  border: 0;
   border-radius: 999px;
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.82) 0%,
-      rgba(255, 255, 255, 0.38) 22%,
-      transparent 46%
+      rgba(255, 255, 255, 0.34) 23%,
+      transparent 48%
     ),
     linear-gradient(180deg, #35e7ff 0%, #00a9c2 48%, #006d7d 100%);
   color: #fff;
-  font-family: Impact, Pretendard, sans-serif;
-  font-size: 20px;
-  font-weight: 900;
+  font-family: Papyrus, fantasy;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 1;
   text-align: center;
   text-decoration: none;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.55);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.62);
   box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.9),
     inset 0 -9px 16px rgba(0, 0, 0, 0.28), 0 3px 0 #a6a6a6,
     0 7px 15px rgba(0, 0, 0, 0.38);
@@ -58,8 +69,8 @@ body {
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.82) 0%,
-      rgba(255, 255, 255, 0.38) 22%,
-      transparent 46%
+      rgba(255, 255, 255, 0.34) 23%,
+      transparent 48%
     ),
     linear-gradient(180deg, #b936ff 0%, #6200df 48%, #330099 100%);
 }
@@ -76,10 +87,11 @@ body {
   z-index: 90;
   transform: translateX(-50%);
   padding: 6px 12px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #0000ff;
   font-family: "Times New Roman", serif;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .corridor-strip {
@@ -112,7 +124,7 @@ body {
   padding: 0;
   border: 0;
   background: transparent;
-  cursor: pointer;
+  cursor: var(--magic-wand-cursor);
 }
 
 .hotspot.is-done {
